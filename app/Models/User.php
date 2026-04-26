@@ -2,11 +2,11 @@
 
 namespace App\Models;
 
+use Illuminate\Database\Eloquent\Relations\HasMany;
 // use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
-use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class User extends Authenticatable
 {
@@ -48,7 +48,8 @@ class User extends Authenticatable
     }
 
     /**
-     * Relasi ke Chirp: Satu User bisa memiliki banyak Chirp.
+     * Relasi ke Chirp:
+     * Satu User bisa memiliki banyak Chirp
      */
     public function chirps(): HasMany
     {

@@ -6,7 +6,6 @@ use App\Http\Controllers\Auth\Register;
 use App\Http\Controllers\ChirpController;
 use Illuminate\Support\Facades\Route;
 
-// Rute Publik: Siapa pun bisa melihat feed
 Route::get('/', [ChirpController::class, 'index']);
 
 // Registration Routes
