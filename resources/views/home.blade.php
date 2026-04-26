@@ -4,6 +4,7 @@
     </x-slot:title>
 
     <div class="max-w-2xl mx-auto">
+        <p>Project UTS oleh Yuliana Ambarwati</p>
         @forelse ($chirps as $chirp)
             <div class="card bg-base-100 shadow mt-8">
                 <div class="card-body">
